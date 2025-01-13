@@ -1,6 +1,7 @@
 import Repo from "./Repo";
 
 const Repos = ({ repos, alwaysFullWidth = false }) => {
+	
 	const className = alwaysFullWidth ? "w-full" : "lg:w-2/3 w-full";
 
 	return (
