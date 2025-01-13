@@ -5,7 +5,7 @@ import { PROGRAMMING_LANGUAGES } from "../utils/constants";
 import toast from "react-hot-toast";
 
 const Repo = ({repo}) => {
-	const formattedDate = formatDate(repo.createed_at);
+	const formattedDate = formatDate(repo.created_at);
 	const handleCloneClick = async (repo) => {
 		try{
 			await navigator.clipboard.writeText(repo.clone_url);
