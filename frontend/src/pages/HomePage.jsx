@@ -18,7 +18,7 @@ const HomePage = () => {
 	
 
 
-	const getUserProfileAndRepos = useCallback(async(username) => {
+	const getUserProfileAndRepos = useCallback(async(username="Stuti-Mahajan-14") => {
 		setLoading(true);
 		try {
 			const res = await fetch(`/api/users/profile/${username}`);
